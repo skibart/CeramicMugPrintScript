@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-<p> 
 
+<body>
     <div id="calc-price-div">
-        <div style="visibility: hidden;" id="InfoPrintMetod">maxiKalkaOneSide,maxiKalkaTwoSide,maxiKalkaAround,maxiNB</div>
-        <div style="visibility: hidden;" id="mox-method">C0893</div>
+        <div style="visibility: hidden;" id="InfoPrintMethod">maxiKalkaOneSide,maxiKalkaTwoSide,maxiKalkaAround,maxiNB
+        </div>
+        <div style="visibility: hidden;" id="box-method">C0893</div>
         <div style="display:none" id="mug-id">M_132_AC_E0310</div>
 
-    <input type="range" id="price-range" step="12" min="108" max="108">
-    <label>Ilość </label><span id="quantity"></span></br>
-    <label>Metoda</label><select id="print-method"></select></br>
-    <label>Ilość kolorów</label><select id="numbers-of-color"></select></br>
-    <label>Opakowanie</label>
-    <select id="boxtype">
-        <option value="zbiorczo">Opakowanie zbiorcze</option>
-    </select></br>
+        <input type="range" id="price-range" step="12" min="108" max="108">
+        <label>Ilość </label><span id="quantity"></span><br>
+        <label>Metoda</label><select id="print-method"></select><br>
+        <label>Ilość kolorów</label><select id="numbers-of-color"></select><br>
+        <label>Opakowanie</label>
+        <select id="boxtype">
+            <option value="zbiorczo">Opakowanie zbiorcze</option>
+        </select><br>
 
-        <label>Cena nadruku</label> <input type="text" id="price-printing"></br>
-        <label>Cena przygotowalni</label> <input type="text" id="price-prepress"></br>
-        <label>Cena towaru bez nadruku</label> <input type="text" id="price-without-inprint"></br>
-        <label>Cena</label> <input type="text" id="price-final"></br>
-        <label>Koszt dostawy</label> <input type="text" id="price-shippment"></br></label>    
-        
+        <label>Cena nadruku</label> <input type="text" id="price-printing"><br>
+        <label>Cena przygotowalni</label> <input type="text" id="price-prepress"><br>
+        <label>Cena towaru bez nadruku</label> <input type="text" id="price-without-inprint"><br>
+        <label>Cena</label> <input type="text" id="price-final"><br>
+        <label>Koszt dostawy</label> <input type="text" id="price-shippment"><br>
+
         <script src="priceMug.js"></script>
         <script src="print4mug.js"></script>
         <script src="calc-kubkiv2.js"></script>
-</div>
+    </div>
 </body>
+
 </html>
